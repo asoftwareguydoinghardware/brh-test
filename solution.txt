@@ -1,0 +1,295 @@
+Cells are numbered:
+	1 2 3
+	4 x 5
+	6 7 8
+
+Starting configurations like rrr_rr_rrb represent the state of each cell in
+increasing order.  So, rrr_rr_rrb represents the case where only cell 8
+is in blue.
+
+rrr_rr_rrr: 1, 2, 3, 4, 5, 6, 7, 8
+rrr_rr_rrb: 1, 2, 4
+rrr_rr_rbr: 1, 2, 3, 4, 5
+rrr_rr_rbb: 1, 2, 4, 6, 7, 8
+rrr_rr_brr: 2, 3, 5
+rrr_rr_brb: 2, 6, 7, 8
+rrr_rr_bbr: 2, 3, 5, 6, 7, 8
+rrr_rr_bbb: 2
+
+rrr_rb_rrr: 1, 2, 4, 6, 7
+rrr_rb_rrb: 1, 2, 3, 4, 5, 8
+rrr_rb_rbr: 1, 2, 4, 8
+rrr_rb_rbb: 1, 2, 3, 4, 5, 6, 7
+rrr_rb_brr: 2, 8
+rrr_rb_brb: 2, 3, 5, 6, 7
+rrr_rb_bbr: 2, 6, 7
+rrr_rb_bbb: 2, 3, 5, 8
+
+rrr_br_rrr: 2, 3, 5, 7, 8
+rrr_br_rrb: 2, 6
+rrr_br_rbr: 2, 3, 5, 6
+rrr_br_rbb: 2, 7, 8
+rrr_br_brr: 1, 2, 3, 4, 5, 6
+rrr_br_brb: 1, 2, 4, 7, 8
+rrr_br_bbr: 1, 2, 3, 4, 5, 7, 8
+rrr_br_bbb: 1, 2, 4, 6
+
+rrr_bb_rrr: 2, 7
+rrr_bb_rrb: 2, 3, 5, 6, 8
+rrr_bb_rbr: 2, 6, 8
+rrr_bb_rbb: 2, 3, 5, 7
+rrr_bb_brr: 1, 2, 4, 6, 8
+rrr_bb_brb: 1, 2, 3, 4, 5, 7
+rrr_bb_bbr: 1, 2, 4, 7
+rrr_bb_bbb: 1, 2, 3, 4, 5, 6, 8
+
+rrb_rr_rrr: 4, 6, 7
+rrb_rr_rrb: 3, 4, 5, 8
+rrb_rr_rbr: 4, 8
+rrb_rr_rbb: 3, 4, 5, 6, 7
+rrb_rr_brr: 1, 8
+rrb_rr_brb: 1, 3, 5, 6, 7
+rrb_rr_bbr: 1, 6, 7
+rrb_rr_bbb: 1, 3, 5, 8
+
+rrb_rb_rrr: 3, 4, 5, 6, 7, 8
+rrb_rb_rrb: 4
+rrb_rb_rbr: 3, 4, 5
+rrb_rb_rbb: 4, 6, 7, 8
+rrb_rb_brr: 1, 3, 5
+rrb_rb_brb: 1, 6, 7, 8
+rrb_rb_bbr: 1, 3, 5, 6, 7, 8
+rrb_rb_bbb: 1
+
+rrb_br_rrr: 1, 7
+rrb_br_rrb: 1, 3, 5, 6, 8
+rrb_br_rbr: 1, 6, 8
+rrb_br_rbb: 1, 3, 5, 7
+rrb_br_brr: 4, 6, 8
+rrb_br_brb: 3, 4, 5, 7
+rrb_br_bbr: 4, 7
+rrb_br_bbb: 3, 4, 5, 6, 8
+
+rrb_bb_rrr: 1, 3, 5, 7, 8
+rrb_bb_rrb: 1, 6
+rrb_bb_rbr: 1, 3, 5, 6
+rrb_bb_rbb: 1, 7, 8
+rrb_bb_brr: 3, 4, 5, 6
+rrb_bb_brb: 4, 7, 8
+rrb_bb_bbr: 3, 4, 5, 7, 8
+rrb_bb_bbb: 4, 6
+
+rbr_rr_rrr: 4, 5, 6, 7, 8
+rbr_rr_rrb: 3, 4
+rbr_rr_rbr: 4, 5
+rbr_rr_rbb: 3, 4, 6, 7, 8
+rbr_rr_brr: 1, 5
+rbr_rr_brb: 1, 3, 6, 7, 8
+rbr_rr_bbr: 1, 5, 6, 7, 8
+rbr_rr_bbb: 1, 3
+
+rbr_rb_rrr: 3, 4, 6, 7
+rbr_rb_rrb: 4, 5, 8
+rbr_rb_rbr: 3, 4, 8
+rbr_rb_rbb: 4, 5, 6, 7
+rbr_rb_brr: 1, 3, 8
+rbr_rb_brb: 1, 5, 6, 7
+rbr_rb_bbr: 1, 3, 6, 7
+rbr_rb_bbb: 1, 5, 8
+
+rbr_br_rrr: 1, 5, 7, 8
+rbr_br_rrb: 1, 3, 6
+rbr_br_rbr: 1, 5, 6
+rbr_br_rbb: 1, 3, 7, 8
+rbr_br_brr: 4, 5, 6
+rbr_br_brb: 3, 4, 7, 8
+rbr_br_bbr: 4, 5, 7, 8
+rbr_br_bbb: 3, 4, 6
+
+rbr_bb_rrr: 1, 3, 7
+rbr_bb_rrb: 1, 5, 6, 8
+rbr_bb_rbr: 1, 3, 6, 8
+rbr_bb_rbb: 1, 5, 7
+rbr_bb_brr: 3, 4, 6, 8
+rbr_bb_brb: 4, 5, 7
+rbr_bb_bbr: 3, 4, 7
+rbr_bb_bbb: 4, 5, 6, 8
+
+rbb_rr_rrr: 1, 2, 3, 4, 6, 7
+rbb_rr_rrb: 1, 2, 4, 5, 8
+rbb_rr_rbr: 1, 2, 3, 4, 8
+rbb_rr_rbb: 1, 2, 4, 5, 6, 7
+rbb_rr_brr: 2, 3, 8
+rbb_rr_brb: 2, 5, 6, 7
+rbb_rr_bbr: 2, 3, 6, 7
+rbb_rr_bbb: 2, 5, 8
+
+rbb_rb_rrr: 1, 2, 4, 5, 6, 7, 8
+rbb_rb_rrb: 1, 2, 3, 4
+rbb_rb_rbr: 1, 2, 4, 5
+rbb_rb_rbb: 1, 2, 3, 4, 6, 7, 8
+rbb_rb_brr: 2, 5
+rbb_rb_brb: 2, 3, 6, 7, 8
+rbb_rb_bbr: 2, 5, 6, 7, 8
+rbb_rb_bbb: 2, 3
+
+rbb_br_rrr: 2, 3, 7
+rbb_br_rrb: 2, 5, 6, 8
+rbb_br_rbr: 2, 3, 6, 8
+rbb_br_rbb: 2, 5, 7
+rbb_br_brr: 1, 2, 3, 4, 6, 8
+rbb_br_brb: 1, 2, 4, 5, 7
+rbb_br_bbr: 1, 2, 3, 4, 7
+rbb_br_bbb: 1, 2, 4, 5, 6, 8
+
+rbb_bb_rrr: 2, 5, 7, 8
+rbb_bb_rrb: 2, 3, 6
+rbb_bb_rbr: 2, 5, 6
+rbb_bb_rbb: 2, 3, 7, 8
+rbb_bb_brr: 1, 2, 4, 5, 6
+rbb_bb_brb: 1, 2, 3, 4, 7, 8
+rbb_bb_bbr: 1, 2, 4, 5, 7, 8
+rbb_bb_bbb: 1, 2, 3, 4, 6
+
+brr_rr_rrr: 5, 7, 8
+brr_rr_rrb: 3, 6
+brr_rr_rbr: 5, 6
+brr_rr_rbb: 3, 7, 8
+brr_rr_brr: 1, 4, 5, 6
+brr_rr_brb: 1, 3, 4, 7, 8
+brr_rr_bbr: 1, 4, 5, 7, 8
+brr_rr_bbb: 1, 3, 4, 6
+
+brr_rb_rrr: 3, 7
+brr_rb_rrb: 5, 6, 8
+brr_rb_rbr: 3, 6, 8
+brr_rb_rbb: 5, 7
+brr_rb_brr: 1, 3, 4, 6, 8
+brr_rb_brb: 1, 4, 5, 7
+brr_rb_bbr: 1, 3, 4, 7
+brr_rb_bbb: 1, 4, 5, 6, 8
+
+brr_br_rrr: 1, 4, 5, 6, 7, 8
+brr_br_rrb: 1, 3, 4
+brr_br_rbr: 1, 4, 5
+brr_br_rbb: 1, 3, 4, 6, 7, 8
+brr_br_brr: 5
+brr_br_brb: 3, 6, 7, 8
+brr_br_bbr: 5, 6, 7, 8
+brr_br_bbb: 3
+
+brr_bb_rrr: 1, 3, 4, 6, 7
+brr_bb_rrb: 1, 4, 5, 8
+brr_bb_rbr: 1, 3, 4, 8
+brr_bb_rbb: 1, 4, 5, 6, 7
+brr_bb_brr: 3, 8
+brr_bb_brb: 5, 6, 7
+brr_bb_bbr: 3, 6, 7
+brr_bb_bbb: 5, 8
+
+brb_rr_rrr: 1, 2, 3, 7
+brb_rr_rrb: 1, 2, 5, 6, 8
+brb_rr_rbr: 1, 2, 3, 6, 8
+brb_rr_rbb: 1, 2, 5, 7
+brb_rr_brr: 2, 3, 4, 6, 8
+brb_rr_brb: 2, 4, 5, 7
+brb_rr_bbr: 2, 3, 4, 7
+brb_rr_bbb: 2, 4, 5, 6, 8
+
+brb_rb_rrr: 1, 2, 5, 7, 8
+brb_rb_rrb: 1, 2, 3, 6
+brb_rb_rbr: 1, 2, 5, 6
+brb_rb_rbb: 1, 2, 3, 7, 8
+brb_rb_brr: 2, 4, 5, 6
+brb_rb_brb: 2, 3, 4, 7, 8
+brb_rb_bbr: 2, 4, 5, 7, 8
+brb_rb_bbb: 2, 3, 4, 6
+
+brb_br_rrr: 2, 3, 4, 6, 7
+brb_br_rrb: 2, 4, 5, 8
+brb_br_rbr: 2, 3, 4, 8
+brb_br_rbb: 2, 4, 5, 6, 7
+brb_br_brr: 1, 2, 3, 8
+brb_br_brb: 1, 2, 5, 6, 7
+brb_br_bbr: 1, 2, 3, 6, 7
+brb_br_bbb: 1, 2, 5, 8
+
+brb_bb_rrr: 2, 4, 5, 6, 7, 8
+brb_bb_rrb: 2, 3, 4
+brb_bb_rbr: 2, 4, 5
+brb_bb_rbb: 2, 3, 4, 6, 7, 8
+brb_bb_brr: 1, 2, 5
+brb_bb_brb: 1, 2, 3, 6, 7, 8
+brb_bb_bbr: 1, 2, 5, 6, 7, 8
+brb_bb_bbb: 1, 2, 3
+
+bbr_rr_rrr: 1, 2, 3, 5, 7, 8
+bbr_rr_rrb: 1, 2, 6
+bbr_rr_rbr: 1, 2, 3, 5, 6
+bbr_rr_rbb: 1, 2, 7, 8
+bbr_rr_brr: 2, 3, 4, 5, 6
+bbr_rr_brb: 2, 4, 7, 8
+bbr_rr_bbr: 2, 3, 4, 5, 7, 8
+bbr_rr_bbb: 2, 4, 6
+
+bbr_rb_rrr: 1, 2, 7
+bbr_rb_rrb: 1, 2, 3, 5, 6, 8
+bbr_rb_rbr: 1, 2, 6, 8
+bbr_rb_rbb: 1, 2, 3, 5, 7
+bbr_rb_brr: 2, 4, 6, 8
+bbr_rb_brb: 2, 3, 4, 5, 7
+bbr_rb_bbr: 2, 4, 7
+bbr_rb_bbb: 2, 3, 4, 5, 6, 8
+
+bbr_br_rrr: 2, 3, 4, 5, 6, 7, 8
+bbr_br_rrb: 2, 4
+bbr_br_rbr: 2, 3, 4, 5
+bbr_br_rbb: 2, 4, 6, 7, 8
+bbr_br_brr: 1, 2, 3, 5
+bbr_br_brb: 1, 2, 6, 7, 8
+bbr_br_bbr: 1, 2, 3, 5, 6, 7, 8
+bbr_br_bbb: 1, 2
+
+bbr_bb_rrr: 2, 4, 6, 7
+bbr_bb_rrb: 2, 3, 4, 5, 8
+bbr_bb_rbr: 2, 4, 8
+bbr_bb_rbb: 2, 3, 4, 5, 6, 7
+bbr_bb_brr: 1, 2, 8
+bbr_bb_brb: 1, 2, 3, 5, 6, 7
+bbr_bb_bbr: 1, 2, 6, 7
+bbr_bb_bbb: 1, 2, 3, 5, 8
+
+bbb_rr_rrr: 7
+bbb_rr_rrb: 3, 5, 6, 8
+bbb_rr_rbr: 6, 8
+bbb_rr_rbb: 3, 5, 7
+bbb_rr_brr: 1, 4, 6, 8
+bbb_rr_brb: 1, 3, 4, 5, 7
+bbb_rr_bbr: 1, 4, 7
+bbb_rr_bbb: 1, 3, 4, 5, 6, 8
+
+bbb_rb_rrr: 3, 5, 7, 8
+bbb_rb_rrb: 6
+bbb_rb_rbr: 3, 5, 6
+bbb_rb_rbb: 7, 8
+bbb_rb_brr: 1, 3, 4, 5, 6
+bbb_rb_brb: 1, 4, 7, 8
+bbb_rb_bbr: 1, 3, 4, 5, 7, 8
+bbb_rb_bbb: 1, 4, 6
+
+bbb_br_rrr: 1, 4, 6, 7
+bbb_br_rrb: 1, 3, 4, 5, 8
+bbb_br_rbr: 1, 4, 8
+bbb_br_rbb: 1, 3, 4, 5, 6, 7
+bbb_br_brr: 8
+bbb_br_brb: 3, 5, 6, 7
+bbb_br_bbr: 6, 7
+bbb_br_bbb: 3, 5, 8
+
+bbb_bb_rrr: 1, 3, 4, 5, 6, 7, 8
+bbb_bb_rrb: 1, 4
+bbb_bb_rbr: 1, 3, 4, 5
+bbb_bb_rbb: 1, 4, 6, 7, 8
+bbb_bb_brr: 3, 5
+bbb_bb_brb: 6, 7, 8
+bbb_bb_bbr: 3, 5, 6, 7, 8
